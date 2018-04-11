@@ -1,0 +1,51 @@
+CMS:
+	 (Aleks) 1. Change all logo's
+		 2. Remove personell
+	 (Aleks)	3. Be able to change profile image
+		 4. Be able to set GIF profile image
+		 5. Change homepage slow-motion video
+	 (Aleks) 6. Be able to change all titles and subtitles
+		 7. Be able to change image at [Over ons page: > 1]
+		 8. Be able to change video at [Stage page: > 1]
+	  
+Main page:
+		 1. Change homepage image to slow-motion video
+	
+	
+Over ons page:
+	 (Aleks) 1. Put image under "OVER ONS" title above the text with grey background
+	 	 
+	
+Portfolio page:
+	 (Aleks) 1. Be able to edit videos, e.g. Title, thumbnail, url, delete
+	 (Aleks) 2. Order videos by uploaded date 
+		 3. Make layout(css) look neat and user friendly
+	 (Aleks) 4. Put the edit form to the left of page and select videos on the right side
+	 	 5. Set thumbnail automatically out of a few random pre-defined thumbnail images / Or a shot out of the video
+	 
+	
+Contact page:
+	 (Aleks) 1. Let user type in subject instead of select input
+	 (Aleks) 2. After form submission let user know that it was successful or not with modal box
+	 (Aleks) 3. Send confirmation email to customer with subject and text they submitted, with the email contact details of MaMedia
+
+	
+Stage page:
+		1. Add video to top of text with grey background
+	
+	
+Vacature page:
+       	 (Aleks) 1. Let the user fill in their function in the form by typing it instead of select input
+	 (Aleks) 2. After form submission let user know that it was successful or not with modal box
+	 (Aleks) 3. Get email as employer with the user submitted values
+	 
+	
+Stage reviews & bedrijf reviews pages:
+	 (Aleks) 1. After form submission let user know that it was successful or not with modal box
+	
+General:
+	 (Aleks) 1. Change all only-titles to titles and subtitles
+	 (Aleks) 2. Change lettertype to (akzidenz-grotesk) if not already set
+	 
+
+?- foto grootte eventueel aanpassen ------------
