@@ -1,0 +1,56 @@
+.woocommerce-checkout{
+    label{
+        font-family: "Open Sans", sans-serif;
+        font-size: 14px ;
+        font-weight: normal;
+        text-transform: uppercase;
+        text-decoration: none;
+        margin-bottom: 3px;
+    }
+
+    .chzn-container{
+        font-size: 15px;
+    }
+
+    .form-row .chzn-container-single .chzn-single{
+        height: 27px !important;
+        line-height: 27px !important;
+        font-size: 18px !important;
+        font-style: italic;
+        border: 1px solid #e5e9eb;
+        background: none;
+        border-radius: 0px;
+        box-shadow: none;
+    }
+
+    .cart-subtotal{
+        border-top: 50px solid transparent;
+    }
+}
+
+.woocommerce-checkout-payment .button{
+    background-color: $dark !important;
+    border-radius: 0 !important;
+}
+
+#add_payment_method #payment .payment_method_paypal,
+.woocommerce-checkout #payment .payment_method_paypal {
+    img {
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .about_paypal {
+        margin-top: 6px;
+        margin-left: 10px;
+        display: inline-block;
+        vertical-align: middle;
+
+        line-height: normal;
+    }
+}
+
+#add_payment_method #payment div.payment_box:before,
+.woocommerce-checkout #payment div.payment_box:before {
+    content: none;
+}

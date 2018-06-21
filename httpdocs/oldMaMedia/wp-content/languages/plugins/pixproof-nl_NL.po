@@ -1,0 +1,395 @@
+# Translation of Plugins - PixProof - Development (trunk) in Dutch
+# This file is distributed under the same license as the Plugins - PixProof - Development (trunk) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2017-01-29 09:49:51+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.3.0\n"
+"Language: nl\n"
+"Project-Id-Version: Plugins - PixProof - Development (trunk)\n"
+
+#: views/pixproof_metadata.php:41
+msgid "Images"
+msgstr "Afbeeldingen"
+
+#: views/pixproof_metadata.php:29
+msgid "Event date"
+msgstr "Datum van het evenement"
+
+#: views/pixproof_metadata.php:17
+msgid "Client"
+msgstr "Klant"
+
+#: class-pixproof.php:551
+msgid "Empty gallery"
+msgstr "Lege galerij"
+
+#: class-pixproof.php:546
+msgid "No gallery data"
+msgstr "Geen galerijgegevens"
+
+#: class-pixproof.php:539
+msgid "The gallery password is required"
+msgstr "Galerij-wachtwoord is vereist"
+
+#: class-pixproof.php:233
+msgid "Previous"
+msgstr "Vorige"
+
+#: class-pixproof.php:232
+msgid "Next"
+msgstr "Verder"
+
+#: class-pixproof.php:231
+msgid "of"
+msgstr "of"
+
+#. Author of the plugin/theme
+msgid "PixelGrade"
+msgstr "PixelGrade"
+
+#. Description of the plugin/theme
+msgid "WordPress photo gallery proofing plugin."
+msgstr "WordPress fotogalerij proofing plugin."
+
+#. #-#-#-#-#  tmp-pixproof.pot (PixProof 1.2.4)  #-#-#-#-#
+#. Plugin URI of the plugin/theme
+#. #-#-#-#-#  tmp-pixproof.pot (PixProof 1.2.4)  #-#-#-#-#
+#. Author URI of the plugin/theme
+msgid "http://pixelgrade.com"
+msgstr "http://pixelgrade.com"
+
+#: views/pixproof_gallery.php:68
+msgid "Zoom"
+msgstr "Zoom"
+
+#: class-pixproof.php:229 views/pixproof_gallery.php:19
+msgid "Select"
+msgstr "Selecteren"
+
+#: class-pixproof.php:230 views/pixproof_gallery.php:17
+msgid "Deselect"
+msgstr "Deselecteren"
+
+#: views/admin.php:54
+msgid "Save Changes"
+msgstr "Bewaar wijzigingen"
+
+#: views/admin.php:41
+msgid "Settings have been updated."
+msgstr "Instellingen zijn aangepast."
+
+#: views/admin.php:34
+msgid "Please check the fields for errors and typos."
+msgstr "Controleer de velden op fouten en typfouten."
+
+#: views/admin.php:33
+msgid "Unable to save settings."
+msgstr "Instellingen kunnen niet opgeslagen worden."
+
+#: views/admin.php:26
+msgid "Pixproof"
+msgstr "Pixproof"
+
+#: settings/post_types.php:123
+msgid "How big should be the grid?"
+msgstr "Hoe groot moet de grid zijn?"
+
+#: settings/post_types.php:116
+msgid "How big the image thumbnails should be?"
+msgstr "Hoe groot moeten de pictogrammen van de foto's zijn?"
+
+#: settings/post_types.php:104
+msgid "Do you want to overwrite the style of all proof galleries?"
+msgstr "Wil je de stijl van alle beoordelingsgalerijen overschrijven?"
+
+#: settings/post_types.php:103
+msgid "Change Gallery Global Style"
+msgstr "Wijzig de globale stijl van de galerij"
+
+#: settings/post_types.php:71
+msgid "Change the single gallery slug as you need it."
+msgstr "Wijzig de enkelvoudige galerij slug"
+
+#: settings/post_types.php:70
+msgid "New Single Item Slug"
+msgstr "Nieuwe enkelvoudige item-slug"
+
+#: settings/post_types.php:61
+msgid "Do you want to rewrite the single gallery item slug?"
+msgstr "Wil je de enkelvoudige galerij item-slug wijzigen?"
+
+#: settings/post_types.php:60
+msgid "Change Gallery Slug"
+msgstr "Galerij-slug wijzigen"
+
+#: settings/post_types.php:55
+msgid "Here you can change the plural label.The default is \"Proof Galleries\""
+msgstr "Hier kun je het meervoudig label wijzigen. Standaard is \"Beoordelingsgalerijen\" "
+
+#: settings/post_types.php:54
+msgid "Multiple Items Label (plural)"
+msgstr "Meervoudige items label (meervoud)"
+
+#: settings/post_types.php:49
+msgid "Here you can change the singular label.The default is \"Proof Gallery\""
+msgstr "Hier kunt u het enkelvoudig label wijzigen. Standaard is \"Beoordelingsgalerij\""
+
+#: settings/post_types.php:48
+msgid "Single Item Label"
+msgstr "Enkelvoudig Item Label"
+
+#: settings/post_types.php:37
+msgid "Enable Pixproof Galleries"
+msgstr "PixProof Galerijen inschakelen"
+
+#: settings/post_types.php:31
+msgid "Proof Galleries Settings"
+msgstr "Instellingen van de Beoordelingsgalerijen "
+
+#: settings/general.php:45
+msgid "If you want to style the PixProof galleries yourself you can remove the plugin style here "
+msgstr "Als u de stijl van de PixProof galerijen zelf wilt aanpassen kunt u de Plugin Stijl hier verwijderen"
+
+#: settings/general.php:44
+msgid "Disable Plugin Style"
+msgstr "Plugin Stijl Uitschakelen"
+
+#: settings/general.php:36
+msgid "Automatically (from the selected images)"
+msgstr "Automatisch (vanuit de geselecteerde afbeeldingen)"
+
+#: settings/general.php:35
+msgid "Manually (uploaded by the gallery owner)"
+msgstr "Handmatig (geladen door de galerij-eigenaar)"
+
+#: settings/general.php:31
+msgid "How the archive file should be generated?"
+msgstr "Hoe moet het zip-archief worden gegenereerd?"
+
+#: settings/general.php:30
+msgid "The ZIP archive should be generated:"
+msgstr "Het zip archief moet worden gegenereerd:"
+
+#: settings/general.php:18
+msgid "Enable Images Download"
+msgstr "Afbeeldingen downloaden activeren"
+
+#: settings/general.php:13
+msgid "After the content"
+msgstr "Achter de inhoud"
+
+#: settings/general.php:12
+msgid "Before the content"
+msgstr "Voor de inhoud"
+
+#: settings/general.php:10
+msgid "Select the PixProof gallery position in content: "
+msgstr "Selecteer de PixProof galerij positie in de inhoud:"
+
+#: plugin-defaults.php:13 settings/post_types.php:50
+msgid "Proof Gallery"
+msgstr "Beoordelingsgalerij"
+
+#: plugin-config.php:71
+msgid "Invalid Value."
+msgstr "Ongeldige waarde"
+
+#: features/metaboxes/metaboxes.php:96
+msgid "You can remove the ability to download the zip archive for this gallery"
+msgstr "Je kunt de mogelijkheid tot downloaden van een zip-archief voor deze galerij uitschakelen"
+
+#: features/metaboxes/metaboxes.php:95
+msgid "Disable Archive Download"
+msgstr "Download-archief uitschakelen"
+
+#: features/metaboxes/metaboxes.php:87
+msgid "Upload a .zip archive so the client can download it via the Download link. Leave it empty to hide the link."
+msgstr "Laad een .zip archief zodat de klant deze kan downloaden via een download link. Laat het veld leeg om de link te verbergen."
+
+#: features/metaboxes/metaboxes.php:86
+msgid "Client .zip archive"
+msgstr "Klant .zip archief"
+
+#: features/metaboxes/metaboxes.php:74
+msgid "Consecutive IDs and Photo Title"
+msgstr "Opvolgende IDs en fototitel"
+
+#: features/metaboxes/metaboxes.php:70
+msgid "Unique IDs and Photo Title"
+msgstr "Unieke IDs en Fototitel"
+
+#: features/metaboxes/metaboxes.php:66
+msgid "File Name"
+msgstr "Bestandsnaam"
+
+#: features/metaboxes/metaboxes.php:62
+msgid "Consecutive IDs"
+msgstr "Opvolgende IDs"
+
+#: features/metaboxes/metaboxes.php:58
+msgid "Unique IDs"
+msgstr "Unieke IDs"
+
+#: features/metaboxes/metaboxes.php:53
+msgid "How would you like to identify each photo?"
+msgstr "Hoe wilt je iedere foto identificeren?"
+
+#: features/metaboxes/metaboxes.php:52
+msgid "Photos Display Name"
+msgstr "Getoonde fotonaam"
+
+#: features/metaboxes/metaboxes.php:47
+msgid "Date"
+msgstr "Datum"
+
+#: features/metaboxes/metaboxes.php:41
+msgid "Client Name"
+msgstr "Klantnaam"
+
+#: features/metaboxes/metaboxes.php:35
+msgid "Gallery"
+msgstr "Galerij"
+
+#: features/metaboxes/metaboxes.php:27
+msgid "Pixproof Gallery"
+msgstr "Pixproof Galerij"
+
+#: features/metaboxes/init.php:1189
+msgid "Save"
+msgstr "Bewaar"
+
+#: features/metaboxes/init.php:246
+msgid "Current Color"
+msgstr "Huidige Kleur"
+
+#: features/metaboxes/init.php:245
+msgid "Select Color"
+msgstr "Kies Kleur"
+
+#: features/metaboxes/init.php:244
+msgid "Default"
+msgstr "Standaard"
+
+#: features/metaboxes/init.php:243
+msgid "Clear"
+msgstr "Wissen"
+
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:553
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:596
+#: views/pixproof_metadata.php:52
+msgid "Download"
+msgstr "Download"
+
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:553
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:596
+msgid "File:"
+msgstr "Bestand:"
+
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:542
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:588
+msgid "Remove Image"
+msgstr "Afbeelding verwijderen"
+
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:529
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:569
+msgid "Add or Upload File"
+msgstr "Bestand toevoegen of laden"
+
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:178
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:553
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:596
+msgid "Remove"
+msgstr "Verwijderen"
+
+#: features/metaboxes/helpers/pixproof_Meta_Box_types.php:150
+msgid "Add Row"
+msgstr "Rij toevoegen"
+
+#: features/metaboxes/helpers/pixproof_Meta_Box_ajax.php:134
+msgid "No oEmbed Results Found for %s. View more info at"
+msgstr "Geen oEmbed-resultaten gevonden voor %s. Bekijk meer info op"
+
+#: features/metaboxes/helpers/pixproof_Meta_Box_ajax.php:131
+msgid "Remove Embed"
+msgstr "Verwijder Insluiting"
+
+#: features/metaboxes/helpers/pixproof_Meta_Box_ajax.php:47
+msgid "Please Try Again"
+msgstr "Opnieuw proberen."
+
+#: features/custom_post_types.php:38
+msgid "Not found in Trash"
+msgstr " Niets gevonden in de prullenbak"
+
+#: features/custom_post_types.php:37
+msgid "Not found"
+msgstr "Niets gevonden"
+
+#: features/custom_post_types.php:36
+msgid "Search Proof Galelry"
+msgstr "Zoek beoordelingsgalerij  "
+
+#: features/custom_post_types.php:35
+msgid "Update Proof Gallery"
+msgstr "Update beoordelingsgalerij  "
+
+#: features/custom_post_types.php:34
+msgid "Edit Proof Gallery"
+msgstr "Bewerk beoordelingsgalerij"
+
+#: features/custom_post_types.php:33
+msgid "Add New"
+msgstr "Nieuwe toevoegen"
+
+#: features/custom_post_types.php:32
+msgid "Add New Proof Gallery"
+msgstr "Voeg een nieuwe beoordelingsgalerij toe"
+
+#: features/custom_post_types.php:31
+msgid "View Item"
+msgstr "Bekijk item"
+
+#: features/custom_post_types.php:30
+msgid "All Items"
+msgstr "Alle items"
+
+#: features/custom_post_types.php:29
+msgid "Parent Item:"
+msgstr "Hoofditem:"
+
+#: features/custom_post_types.php:13 plugin-defaults.php:14
+#: settings/post_types.php:56
+msgid "Proof Galleries"
+msgstr " Beoordelingsgalerijen  "
+
+#: features/custom_post_types.php:12
+msgctxt "Post Type General Name"
+msgid "Proof Galleries"
+msgstr "Beoordelingsgalerijen"
+
+#: features/custom_post_types.php:7
+msgctxt "Post Type Singular Name"
+msgid "Proof Gallery"
+msgstr "Beoordelingsgalerij"
+
+#: core/defaults.php:31
+msgid "Field is required."
+msgstr "Veld is verplicht."
+
+#: core/defaults.php:30
+msgid "Numberic value required."
+msgstr "Numerieke waarde vereist"
+
+#: class-pixproof.php:261
+msgid "Settings"
+msgstr "Instellingen"
+
+#. #-#-#-#-#  tmp-pixproof.pot (PixProof 1.2.4)  #-#-#-#-#
+#. Plugin Name of the plugin/theme
+#: class-pixproof.php:243
+msgid "PixProof"
+msgstr "PixProof"
