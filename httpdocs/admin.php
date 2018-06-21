@@ -60,9 +60,9 @@
 					
 					// Hash password
 					
-					$inputPassword = $hash1 . $inputPassword . $hash2;
-					$inputPassword = hash('sha512', $inputPassword);
-					
+					// $inputPassword = $inputPassword;
+					// $inputPassword = hash('sha512', $inputPassword);
+					echo "<div style='color:white;'>" . $inputPassword . "</div>";
 					// Select id from users where username and hashed password
 					include 'php/private/prepare.php';
 					
@@ -73,7 +73,8 @@
 						$stmt->fetch();
 						$stmt->close();
 					}
-					
+					echo "<div style='color:white;'> |||||" . $foundId . "</div>";
+
 					if($foundId == "" || $foundId == null) {
 						showError("Foutmelding", "Uw e-mail adres en/of wachtwoord is fout.");
 					} else {

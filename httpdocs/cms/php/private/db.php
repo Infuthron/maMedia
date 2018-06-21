@@ -1,8 +1,8 @@
 <?php
 
 	define ('SERVERNAME','localhost');
-	define ('USERNAME','mamedia2');
-	define ('PASSWORD','admin123');
+	define ('USERNAME','root');
+	define ('PASSWORD','root');
 	define ('DATABASE','mamedia');
 
 ?>
