@@ -44,16 +44,16 @@
 			}
 			
 			if($_SERVER["REQUEST_METHOD"] == "POST") {
-				$pageId = encodeString($_POST["id"]);
-				
+				$data = file_get_contents('php://input');
+				$pageId = explode("pageId=", $data)[1];
 				if (($pageId == 1) || ($pageId == 5)) {
 					if($pageId == 1) {
 						$title = encodeString($_POST["title"]);
 						include 'php/private/prepare.php';
-						
 						$stmt = $mysqli->prepare("UPDATE pages SET title=? WHERE id=?");
 						$stmt->bind_param("si", $title, $pageId);
 						if(!$stmt->execute()) {
+							exit;
 							showError("Foutmelding", "Er is iets foutgegaan.");
 							exit;
 						}
@@ -96,9 +96,19 @@
 						$mysqli->close();
 					}
 					
-					showError("Success", "De verandering is successvol voldaan.");
-					
+					// showError("Success", "De verandering is successvol voldaan.");
 					if($pageId == 1) {
+						$b64 = explode("file=", urldecode($data))[1];
+						$fileType = explode(";", explode("/", explode("," ,$b64)[0])[1])[0];
+						$b64encodedstring =  explode(",", explode("==" ,$b64)[0])[1];
+						$filename = "./images/logos/" . rand(0,1000) . "." . $fileType;
+						echo $filename;
+						$ifp = fopen( $filename, 'wb' ); 
+						fwrite( $ifp, base64_decode($b64encodedstring));
+						fclose( $ifp ); 
+
+						die("asdasdas : " . $fileType . $b64encodedstring);
+						exit(0);
 						if(!empty($_FILES['backgroundInput']['name'])) {
 							$ext = strtolower(pathinfo($_FILES['backgroundInput']['name'],PATHINFO_EXTENSION));
 							if ($ext == "mp4" || $ext == "wav" || $ext == "ogg" || $ext == "png" || $ext == "jpg" || $ext == "gif" || $ext == "svg") {
@@ -452,7 +462,7 @@
 						<input type='checkbox' id='videoMute' name='mute' value='false' onclick='backgroundMute()' style='width: 15px; height: 15px; display: inline-block; margin-right: 5px;' title='Klik hier om geluid toe te staan'/><h3 style='display: inline-block; margin: 0;' title='Klik op de knop hiernaast om de geluid toe te staan'>Geluid toestaan</h3>
 						</div>
 						<input spellcheck="false" type="text" name="title" style="margin-bottom: 15px; max-width: 350px; margin-left: calc(50% - 175px);" class="form-control" value="<?php echo loadTitle(1); ?>"/>
-						<input name="editText" style="margin-top: 0;" type="submit" value="Verander">
+						<input name="editText" style="margin-top: 0;" type="submit" value="Verander .." id="backgroundVideoFormSubmit">
 					</form>
 					<form method="post" style="margin: 0 auto; text-align: center; max-width: 700px; margin-bottom: 50px; background-color: #d9d9d9; border-radius: 5px; padding: 10px;" enctype="multipart/form-data">
 						<h2>Backup afbeelding</h2>
@@ -584,6 +594,10 @@
 				</div>
 			</div>
 		</div>
+		<script
+			src="https://code.jquery.com/jquery-3.3.1.min.js"
+			integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+			crossorigin="anonymous"></script>
 		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 		<script src="../dist/js/swiper.min.js"></script>
 		<script src="../vendor/jquery/jquery.min.js"></script>
@@ -593,6 +607,8 @@
 		<script src="../js/style.js"></script>
 		<script>
 			
+
+			var backroundFromSubmitButton = document.getElementById("backgroundVideoFormSubmit");
 			var backgroundDisplay = document.getElementById("homeBackgroundDisplay");
 			var backgroundInput = document.getElementById("backgroundInput");
 			var imageInput = document.getElementById("imageInput");
@@ -614,6 +630,38 @@
 			var backupImage2 = document.getElementById("backupImage2");
 			var backupPreview2 = document.getElementById("previewBackup2");
 		
+			backroundFromSubmitButton.addEventListener("click", function handleFileSubmitClickEvent(event) {
+				event.preventDefault()
+				console.log("file upload")
+				if(backgroundInput.files[0]) {
+					var file = backgroundInput.files[0]
+					var reader = new FileReader();
+					reader.readAsDataURL(file);  
+
+
+					reader.onload = function(e){            
+						var d = {file:reader.result, pageId: 1}
+						// console.log("total chunks uploaded: ", loaded/step, "\n uploading chunk : ", reader.result)
+						$.ajax({
+							url:"home.php",
+							type:"POST", 
+							data:d                     // d is the chunk got by readAsBinaryString(...)
+						})
+							.done(function(r){           // if 'd' is uploaded successfully then ->
+								console.log(r, " : done uploading")
+							})
+							.fail(function(r){   // if upload failed
+								// if((totalFailure++) < 3) { // atleast try 3 times to upload file even on failure
+								// 	reader.readAsBinaryString(blob);
+								// } else {                   // if file upload is failed 4th time
+								// 	// show message to user that file uploading process is failed
+								// }              
+						});
+					}
+				}
+			})
+
+
 			backupImage1.addEventListener("change", function(event) {
 				var file = backupImage1.files[0];
 				

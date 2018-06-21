@@ -1,8 +1,8 @@
 <?php
 	
 	$servername = "localhost";
-	$username = "mamedia2";
-	$password = "admin123";
+	$username = "root";
+	$password = "root";
 	$database = "mamedia";
 
 ?>
